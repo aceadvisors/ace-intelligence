@@ -68,7 +68,7 @@ export default function Explore() {
               <h3 className="text-2xl font-bold text-gray-800">Intrinsic Valuation (DCF)</h3>
             </div>
             <p className="text-gray-700 mb-4 leading-relaxed">
-              This approach estimates the value of a business based on its <strong>future cash flows</strong>, discounted to today's value.
+              This approach estimates the value of a business based on its <strong>future cash flows</strong>, discounted to today&apos;s value.
             </p>
             <div className="bg-white/60 backdrop-blur-sm p-4 rounded-lg mb-4 border border-white/80">
               <p className="text-sm text-gray-700">
@@ -127,7 +127,7 @@ export default function Explore() {
         {/* Additional Note */}
         <div className="mb-12 text-center">
           <p className="text-sm text-gray-600 italic max-w-4xl mx-auto bg-gray-50/60 backdrop-blur-sm p-4 rounded-lg border border-gray-200/50">
-            <strong>Note:</strong> Other methods — such as precedent transactions, asset-based, or earnings multiples — are also used globally, but ACE focuses on what's most practical and data-driven for emerging markets.
+            <strong>Note:</strong> Other methods — such as precedent transactions, asset-based, or earnings multiples — are also used globally, but ACE focuses on what&apos;s most practical and data-driven for emerging markets.
           </p>
         </div>
 
