@@ -95,11 +95,12 @@ export async function POST(req: NextRequest) {
       console.log(`Attempting to send auto-reply to: ${email}`);
       const autoReplyResult = await transporter.sendMail(autoReplyMailOptions);
       console.log(`Auto-reply sent successfully to: ${email}`, autoReplyResult);
-    } catch (autoReplyError: any) {
+    } catch (autoReplyError) {
+      const error = autoReplyError as Error & { code?: string };
       console.error("Error sending auto-reply:");
-      console.error("Error message:", autoReplyError.message);
-      console.error("Error code:", autoReplyError.code);
-      console.error("Full error:", autoReplyError);
+      console.error("Error message:", error.message);
+      console.error("Error code:", error.code);
+      console.error("Full error:", error);
       // Don't fail the whole request if auto-reply fails
       // Admin emails were sent successfully
       // Note: Auto-reply may fail for external domains due to SMTP restrictions
